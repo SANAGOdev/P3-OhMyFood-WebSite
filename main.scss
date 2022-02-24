@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,900i');
 html, body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-style: italic;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -17,26 +14,34 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
+$color-primary: purple;
+$color-secondary: #EA526F;
+$color-accent: #FFF;
+
+@mixin hover($color) {
+  @if (hue($color) >= 135 and hue($color) < 180) {
+    $color: complement($color-primary);
+  }
+  @else{
+    $color: adjust-hue($color, -60);
+  }
+  background: $color;
+}
 
 .btn {
-  padding: 1.5rem;
-  background: #15DEA5;
   cursor: pointer;
-  border-radius: 100rem;
-  font-size: 1.5rem;
-  color: #fff;
-
-  &--pink{
-      background-color: #EA526F;
-  }
-  &--outline{
-      background-color: transparent;
-      border: 2px solid #15DEA5;
-      &.btn--pink{
-          color: #EA526F;
-      }
+  padding: 1.5rem 3rem;
+  border-radius: 10rem;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: $color-accent;
+  background: $color-primary;
+  &:hover{
+    @include hover($color-primary)
   }
 }
-
