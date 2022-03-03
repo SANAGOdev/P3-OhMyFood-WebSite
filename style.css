@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+/* font-family: 'Roboto', sans-serif;*/
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  font-family: "Shrikhand", cursive;
+  font-weight: unset;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0.3rem;
+  box-shadow: 0 0 0.5rem grey;
+}
+
+.city {
+  padding: 1rem;
+  background-color: rgba(211, 211, 211, 0.3);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.city--txt {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
