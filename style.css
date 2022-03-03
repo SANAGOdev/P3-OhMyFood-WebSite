@@ -12,19 +12,56 @@ body {
   font-size: 2rem;
   margin: 0;
   padding: 0.3rem;
-  box-shadow: 0 0 0.5rem grey;
+  box-shadow: 0 0 0.5rem #5c5c5c;
+  margin-bottom: 3px;
 }
 
 .city {
   padding: 1rem;
-  background-color: rgba(211, 211, 211, 0.3);
+  background-color: #e3e3e3;
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
-.city--txt {
+.city h2 {
   font-size: 1rem;
   margin: 0;
+}
+
+.info {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: rgba(211, 211, 211, 0.3);
+  padding-bottom: 70px;
+}
+.info h2 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+}
+.info p {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+}
+.info button {
+  color: #ffff;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  font-size: 1rem;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 2px 6px 16px -3px rgba(0, 0, 0, 0.65);
+  margin-left: 15%;
+  margin-right: 15%;
+  transition: transform 0.3s;
+}
+.info button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */
