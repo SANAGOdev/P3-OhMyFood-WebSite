@@ -1,0 +1,36 @@
+@import "../Utils/variables";
+
+.info {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(211, 211, 211, 0.3);
+    padding-bottom: 70px;
+    & h1 {
+      margin-top: 2rem;
+      margin-bottom: 0;
+      font-size: 1.6rem;
+    }
+    & p {
+      font-size: 1rem;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 10%;
+    }
+    & button {
+      color: $color-white;
+      background-image: linear-gradient(to top, $color-primary, $color-secondary);
+      font-size: 1rem;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      box-shadow: 2px 6px 16px -3px rgba(0, 0, 0, 0.65);
+      margin-left: 15%;
+      margin-right: 15%;
+      transition: transform 0.3s;
+    }
+    & button:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  }
