@@ -4,7 +4,8 @@
   "description": "OhMyFood WebSite",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch main.scss:style.css"
+    "sass": "sass --watch main.scss:./css/style.css",
+    "prefix": "postcss style.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "SANAGO",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/SANAGOdev/OhMyFood-WebSite/issues"
   },
