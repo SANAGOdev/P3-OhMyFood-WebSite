@@ -4,7 +4,7 @@
         display: flex;
         gap: 2rem;
         padding-left: 1rem;
-        @media (max-width: 850px) {
+        @media (max-width: 994px) {
             flex-direction: column;
         }
     }
@@ -37,7 +37,7 @@
                 opacity: 1;
             }
         }
-        @media (min-width: 850px){
+        @media (min-width: 994px){
             width: 100%;
         }
         & i{

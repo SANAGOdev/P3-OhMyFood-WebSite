@@ -6,7 +6,7 @@
     text-align: center;
     flex-direction: column;
     background-color: $color-grey;
-    padding-bottom: 70px;
+    padding-bottom: 4rem;
     & h1 {
       margin-top: 2rem;
       margin-bottom: 0;
@@ -21,6 +21,9 @@
     & button {
       @include button;
       @include box-shadow;
+      @media (min-width: 994px) {
+        width: 25%;
+      }
     }
     & button:hover {
       @include hover;
