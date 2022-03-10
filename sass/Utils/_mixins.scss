@@ -1,0 +1,19 @@
+@mixin box-shadow {
+    box-shadow: 0px 6px 13px 0px #bebebe;
+}
+@mixin button {
+    color: $color-white;
+    background-image: linear-gradient(to top, $color-primary, $color-secondary);
+    font-size: 1rem;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    transition: all 0.2s;
+}
+@mixin hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+    cursor: pointer;
+}
