@@ -21,7 +21,7 @@
     & button {
       @include button;
       @include box-shadow;
-      @media (min-width: 994px) {
+      @media (min-width: 995px) {
         width: 25%;
       }
     }
