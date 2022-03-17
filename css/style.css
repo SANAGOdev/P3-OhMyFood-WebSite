@@ -140,7 +140,8 @@ a {
   margin-top: 4rem;
   margin-bottom: 1rem;
 }
-.restaurants h3, .restaurants p {
+.restaurants h3,
+.restaurants p {
   font-size: 1rem;
   margin: 0;
 }
@@ -183,6 +184,7 @@ a {
   height: 15rem;
   border-radius: 20px;
   background-color: #ffff;
+  transition: all 200ms;
   box-shadow: 0px 6px 13px 0px #bebebe;
 }
 .restaurants .card__image1 {
@@ -199,6 +201,11 @@ a {
     width: 400px;
   }
 }
+.restaurants .card:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  cursor: pointer;
+}
 .restaurants .card__image2 {
   height: 75%;
   width: 100%;
@@ -212,6 +219,11 @@ a {
     display: flex;
     width: 400px;
   }
+}
+.restaurants .card:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  cursor: pointer;
 }
 .restaurants .card__image3 {
   height: 75%;
@@ -227,6 +239,11 @@ a {
     width: 400px;
   }
 }
+.restaurants .card:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  cursor: pointer;
+}
 .restaurants .card__image4 {
   height: 75%;
   width: 100%;
@@ -241,6 +258,11 @@ a {
     width: 400px;
   }
 }
+.restaurants .card:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  cursor: pointer;
+}
 .restaurants .card__description {
   position: relative;
   color: black;
@@ -252,6 +274,18 @@ a {
   font-size: 2rem;
   right: 1rem;
   top: 10%;
+}
+.restaurants .card .fas {
+  opacity: 0;
+  color: transparent;
+  background-image: linear-gradient(to bottom, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 200ms ease-in-out;
+}
+.restaurants .card .fas:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .footer {

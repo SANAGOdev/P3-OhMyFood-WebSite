@@ -6,7 +6,8 @@
     margin-top: 4rem;
     margin-bottom: 1rem;
   }
-  & h3,p{
+  & h3,
+  p {
     font-size: 1rem;
     margin: 0;
   }
@@ -35,7 +36,7 @@
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 4rem;
-    @media (min-width: 994px){
+    @media (min-width: 994px) {
       flex-direction: row;
       justify-content: space-between;
     }
@@ -47,6 +48,7 @@
     height: 15rem;
     border-radius: 20px;
     background-color: $color-white;
+    transition: all 200ms;
     @include box-shadow;
 
     @for $i from 1 through 4 {
@@ -54,22 +56,41 @@
         @include cards-size;
         background-image: url(../images/restaurants/image#{$i}.jpg);
       }
-    @media (min-width: 994px) {
-      display: flex;
-      width: 400px;
+      @media (min-width: 994px) {
+        display: flex;
+        width: 400px;
+      }
+    &:hover{
+      @include hover
     }
     }
-    &__description{
+    &__description {
       position: relative;
       color: $color-black;
       margin: 0.5rem;
       margin-left: 1rem;
     }
-    i{
+    i {
       position: absolute;
       font-size: 2rem;
       right: 1rem;
       top: 10%;
+    }
+    .fas {
+      opacity: 0;
+      color: transparent;
+      background-image: linear-gradient(
+        to bottom,
+        $color-primary,
+        $color-secondary
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      transition: all 200ms ease-in-out;
+      &:hover{
+        opacity: 1;
+        transform: scale(1.1);
+      }
     }
   }
 }
