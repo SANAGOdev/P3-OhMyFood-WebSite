@@ -24,3 +24,8 @@
     background-size: cover;
     background-position: center;
 }
+@mixin underline {
+    & > span{
+        border-bottom: 3px solid $color-tertiary;
+    }
+}
