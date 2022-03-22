@@ -337,7 +337,7 @@ a {
   width: 100%;
   background-size: cover;
   margin-top: -3px;
-  background-image: url(../../images/restaurants/image3.jpg);
+  background-image: url(../images/restaurants/image3.jpg);
 }
 @media (min-width: 994px) {
   .cover--image1 {
@@ -351,7 +351,7 @@ a {
   width: 100%;
   background-size: cover;
   margin-top: -3px;
-  background-image: url(../../images/restaurants/image2.jpg);
+  background-image: url(../images/restaurants/image2.jpg);
 }
 @media (min-width: 994px) {
   .cover--image2 {
