@@ -426,6 +426,12 @@ a {
 .menu--grid .commande .description {
   font-size: 15px;
 }
+.menu--grid .commande .prix {
+  position: absolute;
+  left: 85%;
+  top: 60%;
+  font-weight: bold;
+}
 
 .button {
   background-color: #f2f2f2;
