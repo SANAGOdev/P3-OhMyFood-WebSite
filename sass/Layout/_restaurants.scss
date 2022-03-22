@@ -76,21 +76,6 @@
       right: 1rem;
       top: 10%;
     }
-    .fas {
-      opacity: 0;
-      color: transparent;
-      background-image: linear-gradient(
-        to bottom,
-        $color-primary,
-        $color-secondary
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      transition: all 200ms ease-in-out;
-      &:hover{
-        opacity: 1;
-        transform: scale(2);
-      }
-    }
+    @include heart;
   }
 }

@@ -23,8 +23,11 @@
 }
 
 .menu {
-  margin-right: 5%;
-  margin-left: 5%;
+  position: relative;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 2rem;
+  background-color: $color-grey;
   &--header {
     & > h2 {
       font-family: "Shrikhand", cursive;
@@ -34,20 +37,67 @@
       margin-bottom: 0;
     }
     position: absolute;
-    margin-top: -2rem;
+    margin-top: -3rem;
     width: 100%;
     background-color: $color-white;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    background-color: $color-grey;
+    i {
+      position: absolute;
+      font-size: 2rem;
+      right: 3.5rem;
+      top: 30%;
+    }
+    @include heart;
   }
   &--assets {
     & > h3 {
       font-weight: unset;
       font-size: 1rem;
-      margin-top: 1rem;
+      padding-top: 2.5rem;
+      margin-top: 0;
       margin-bottom: 0;
       @include underline;
-      
+    }
+  }
+  &--grid{
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 1rem;
+    & .commande{
+      position: relative;
+      display: flex;
+      height: 4rem;
+      padding-left: 4%;
+      padding-top: 2%;
+      justify-content: space-around;
+      background-color: $color-white;
+      border-radius: 15px;
+      flex-direction: column;
+      & h2{
+        margin: 0;
+        font-size: 18px;
+      }
+      & .description{
+        font-size: 15px;
+      }
+    }
+  }
+}
+.button{
+  background-color: $color-grey;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+  & button{
+    background-color: $color-grey;
+    width: 12rem;
+    @include button;
+    &:hover{
+      @include hover;
     }
   }
 }

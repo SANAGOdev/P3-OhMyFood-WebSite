@@ -285,7 +285,7 @@ a {
 }
 .restaurants .card .fas:hover {
   opacity: 1;
-  transform: scale(2);
+  transform: scale(1.1);
 }
 
 .footer {
@@ -351,16 +351,20 @@ a {
 }
 
 .menu {
-  margin-right: 5%;
-  margin-left: 5%;
+  position: relative;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 2rem;
+  background-color: #f2f2f2;
 }
 .menu--header {
   position: absolute;
-  margin-top: -2rem;
+  margin-top: -3rem;
   width: 100%;
   background-color: #ffff;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+  background-color: #f2f2f2;
 }
 .menu--header > h2 {
   font-family: "Shrikhand", cursive;
@@ -369,14 +373,83 @@ a {
   margin-left: 5%;
   margin-bottom: 0;
 }
+.menu--header i {
+  position: absolute;
+  font-size: 2rem;
+  right: 3.5rem;
+  top: 30%;
+}
+.menu--header .fas {
+  opacity: 0;
+  color: transparent;
+  background-image: linear-gradient(to bottom, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 200ms ease-in-out;
+}
+.menu--header .fas:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
 .menu--assets > h3 {
   font-weight: unset;
   font-size: 1rem;
-  margin-top: 1rem;
+  padding-top: 2.5rem;
+  margin-top: 0;
   margin-bottom: 0;
 }
 .menu--assets > h3 > span {
   border-bottom: 3px solid #99e2d0;
+}
+.menu--grid {
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.menu--grid .commande {
+  position: relative;
+  display: flex;
+  height: 4rem;
+  padding-left: 4%;
+  padding-top: 2%;
+  justify-content: space-around;
+  background-color: #ffff;
+  border-radius: 15px;
+  flex-direction: column;
+}
+.menu--grid .commande h2 {
+  margin: 0;
+  font-size: 18px;
+}
+.menu--grid .commande .description {
+  font-size: 15px;
+}
+
+.button {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+.button button {
+  background-color: #f2f2f2;
+  width: 12rem;
+  color: #ffff;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  font-size: 1rem;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  margin-left: 15%;
+  margin-right: 15%;
+  transition: all 0.2s;
+}
+.button button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

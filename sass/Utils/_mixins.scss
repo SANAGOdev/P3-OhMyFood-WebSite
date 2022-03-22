@@ -1,31 +1,49 @@
 @mixin box-shadow {
-    box-shadow: 0px 6px 13px 0px #bebebe;
+  box-shadow: 0px 6px 13px 0px #bebebe;
 }
 @mixin button {
-    color: $color-white;
-    background-image: linear-gradient(to top, $color-primary, $color-secondary);
-    font-size: 1rem;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    margin-left: 15%;
-    margin-right: 15%;
-    transition: all 0.2s;
+  color: $color-white;
+  background-image: linear-gradient(to top, $color-primary, $color-secondary);
+  font-size: 1rem;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  margin-left: 15%;
+  margin-right: 15%;
+  transition: all 0.2s;
 }
 @mixin hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-    cursor: pointer;
+  transform: scale(1.05);
+  opacity: 0.9;
+  cursor: pointer;
 }
 @mixin cards-size {
-    height: 75%;
-    width: 100%;
-    border-radius: 20px 20px 0px 0px;
-    background-size: cover;
-    background-position: center;
+  height: 75%;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  background-size: cover;
+  background-position: center;
 }
 @mixin underline {
-    & > span{
-        border-bottom: 3px solid $color-tertiary;
+  & > span {
+    border-bottom: 3px solid $color-tertiary;
+  }
+}
+@mixin heart {
+  .fas {
+    opacity: 0;
+    color: transparent;
+    background-image: linear-gradient(
+      to bottom,
+      $color-primary,
+      $color-secondary
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 200ms ease-in-out;
+    &:hover {
+      opacity: 1;
+      transform: scale(1.1);
     }
+  }
 }
