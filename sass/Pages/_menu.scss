@@ -8,8 +8,21 @@
   background-size: cover;
   margin-top: -3px;
   background-image: url(../../images/restaurants/image3.jpg);
+  @media (min-width: 994px) {
+   height: 28rem; 
+  }
 }
-
+.cover--image2{
+  position: relative;
+  height: 22rem;
+  width: 100%;
+  background-size: cover;
+  margin-top: -3px;
+  background-image: url(../../images/restaurants/image2.jpg);
+  @media (min-width: 994px) {
+    height: 28rem; 
+   }
+}
 .title {
   & > a {
     position: absolute;
@@ -24,8 +37,8 @@
 
 .menu {
   position: relative;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 4%;
+  padding-left: 4%;
   padding-bottom: 2rem;
   background-color: $color-grey;
   &--header {
@@ -62,21 +75,47 @@
     }
   }
   &--grid{
-    height: 16rem;
+    height: 17rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-top: 1rem;
+    @media (min-width: 994px) {
+      display: flex;
+      height: 8rem;
+      flex-direction: row;
+    }
     & .commande{
       position: relative;
       display: flex;
-      height: 4rem;
+      height: 3.5rem;
+      padding: 5px;
       padding-left: 4%;
       padding-top: 2%;
       justify-content: space-around;
       background-color: $color-white;
       border-radius: 15px;
       flex-direction: column;
+      &:hover .menu_check_icon{
+        cursor: pointer;
+        transform: translateX(-75%);
+        transition: ease-in-out 300ms;
+        margin-left: 5rem;
+        opacity: 1;
+        i {
+          transform: rotate(360deg) translateX(-5%);
+          transition: ease-out 600ms;
+        }
+      }
+      @media (min-width: 994px) {
+        padding: 1rem;
+        padding-right: 5rem;
+        align-items: left;
+        width: 20%;
+      }
+      & .menu_check_icon{
+        opacity: 0;
+      }
       & h2{
         margin: 0;
         font-size: 18px;
@@ -84,13 +123,11 @@
       & .description{
         font-size: 15px;
       }
-      & .prix{
-        position: absolute;
-        left: 85%;
-        top: 60%;
-        font-weight: bold;
-      }
     }
+  }
+  @media (min-width: 994px) {
+    display: flex;
+    flex-direction: column;
   }
 }
 .button{
@@ -105,5 +142,14 @@
     &:hover{
       @include hover;
     }
+    @media (min-width: 994px) {
+    width: 25%;
+    }
   }
+}
+.prix{
+  position: absolute;
+  left: 85%;
+  top: 60%;
+  font-weight: bold;
 }
