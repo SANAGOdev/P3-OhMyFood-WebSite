@@ -1,0 +1,90 @@
+.section {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  font-family: "Shrikhand", cursive;
+  background-image: linear-gradient(
+    to bottom,
+    $color-primary,
+    $color-secondary
+  );
+  height: 100%;
+  width: 100%;
+  line-height: 800px;
+  font-size: 40px;
+  color: $color-white;
+  text-align: center;
+  animation: loader 4s linear normal;
+}
+.loader {
+  top: 20px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  &-bars {
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 10px;
+      height: 30px;
+      background-color: white;
+      animation: grow 1s linear infinite;
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 15px;
+      top: 0px;
+      width: 10px;
+      height: 30px;
+      background-color: white;
+      animation: grow 1s linear 0.25s infinite;
+    }
+    & span {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 30px;
+      top: 0px;
+      width: 10px;
+      height: 30px;
+      background-color: white;
+      animation: grow 1s linear 0.5s infinite;
+    }
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+    z-index: 3;
+    height: 133.4%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+    height: 133.4%;
+  }
+}
