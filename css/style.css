@@ -513,15 +513,9 @@ a {
   justify-content: center;
   justify-content: space-around;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1280px) {
   .menu--grid .commande .items {
-    position: relative;
-    right: -3rem;
-  }
-}
-@media (max-width: 1100px) {
-  .menu--grid .commande .items {
-    right: -5rem;
+    right: 0rem;
   }
 }
 @media (max-width: 994px) {
@@ -588,6 +582,11 @@ a {
   font-weight: bold;
   transition: all 300ms;
 }
+@media (max-width: 1280px) {
+  .prix {
+    left: 3rem;
+  }
+}
 @media (max-width: 994px) {
   .prix {
     left: 8rem;
@@ -615,7 +614,7 @@ a {
 .check {
   position: absolute;
   opacity: 0;
-  left: 28rem;
+  left: 28.1rem;
   top: 0rem;
   height: 3.5rem;
   overflow: hidden;
@@ -630,10 +629,9 @@ a {
     padding-left: 1rem;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1280px) {
   .check {
-    padding-left: 1rem;
-    margin-right: 4rem;
+    left: 21rem;
   }
 }
 @media (max-width: 1100px) {
