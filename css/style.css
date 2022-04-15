@@ -435,6 +435,7 @@ a {
   }
 }
 .menu--grid .commande {
+  white-space: nowrap;
   position: relative;
   display: flex;
   height: 3.5rem;
@@ -446,6 +447,7 @@ a {
   background-color: #ffff;
   border-radius: 15px;
   flex-direction: row;
+  cursor: pointer;
 }
 .menu--grid .commande:hover .check {
   opacity: 1;
@@ -495,14 +497,9 @@ a {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu--grid .commande .description p {
-  margin: 0;
-}
 @media (max-width: 375px) {
   .menu--grid .commande .description {
     font-size: 13px;
-    text-overflow: ellipsis;
-    overflow: hidden;
   }
 }
 .menu--grid .commande .items {
@@ -512,6 +509,8 @@ a {
   flex-direction: column;
   justify-content: center;
   justify-content: space-around;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 @media (max-width: 1280px) {
   .menu--grid .commande .items {
@@ -537,6 +536,15 @@ a {
   .menu--grid .commande .items {
     right: 1rem;
   }
+}
+.menu--grid .commande .items h2 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu--grid .commande .items p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 @media (min-width: 994px) {
   .menu {
@@ -787,6 +795,29 @@ a {
     opacity: 0;
     z-index: 0;
     height: 133.4%;
+  }
+}
+.display_one {
+  opacity: 1;
+  animation: display 0.9s forwards ease-in-out;
+}
+.display_two {
+  opacity: 1;
+  animation: display 1.2s forwards ease-in-out;
+}
+.display_three {
+  opacity: 1;
+  animation: display 1.5s forwards ease-in-out;
+}
+
+@keyframes display {
+  0% {
+    opacity: 0%;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
   }
 }
 
