@@ -359,6 +359,44 @@ a {
   }
 }
 
+.cover--image3 {
+  position: relative;
+  height: 22rem;
+  width: 100%;
+  background-size: cover;
+  margin-top: -3px;
+  background-image: url(../images/restaurants/image1.jpg);
+}
+@media (max-width: 994px) {
+  .cover--image3 {
+    height: 15rem;
+  }
+}
+@media (min-width: 994px) {
+  .cover--image3 {
+    height: 28rem;
+  }
+}
+
+.cover--image4 {
+  position: relative;
+  height: 22rem;
+  width: 100%;
+  background-size: cover;
+  margin-top: -3px;
+  background-image: url(../images/restaurants/image1.jpg);
+}
+@media (max-width: 994px) {
+  .cover--image4 {
+    height: 16rem;
+  }
+}
+@media (min-width: 994px) {
+  .cover--image4 {
+    height: 28rem;
+  }
+}
+
 .title > a {
   position: absolute;
   left: 15px;
@@ -534,6 +572,7 @@ a {
 }
 @media (max-width: 375px) {
   .menu--grid .commande .items {
+    padding-left: 0;
     right: 1rem;
   }
 }
