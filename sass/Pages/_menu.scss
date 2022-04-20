@@ -140,7 +140,8 @@
           transform: translateX(-300%);
         }
         @media (max-width: 390px){
-          transform: translateX(-200%);
+          width: 8rem;
+          transform: translateX(-70%);
         }
       }
       &:hover .check_icon {
@@ -151,6 +152,9 @@
         padding-right: 5rem;
         align-items: left;
         width: 20%;
+      }
+      @media (max-width: 375px){
+        justify-content: normal;
       }
       & h2 {
         margin: 0;
@@ -248,7 +252,9 @@
     left: 0rem;
   }
   @media (max-width: 375px){
-    left: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    left: 3.5rem;
     font-size: 0.9rem;
     top: 62%;
   }

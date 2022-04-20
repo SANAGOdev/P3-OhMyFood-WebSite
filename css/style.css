@@ -506,7 +506,8 @@ a {
 }
 @media (max-width: 390px) {
   .menu--grid .commande:hover .prix {
-    transform: translateX(-200%);
+    width: 8rem;
+    transform: translateX(-70%);
   }
 }
 .menu--grid .commande:hover .check_icon {
@@ -518,6 +519,11 @@ a {
     padding-right: 5rem;
     align-items: left;
     width: 20%;
+  }
+}
+@media (max-width: 375px) {
+  .menu--grid .commande {
+    justify-content: normal;
   }
 }
 .menu--grid .commande h2 {
@@ -652,7 +658,9 @@ a {
 }
 @media (max-width: 375px) {
   .prix {
-    left: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    left: 3.5rem;
     font-size: 0.9rem;
     top: 62%;
   }
