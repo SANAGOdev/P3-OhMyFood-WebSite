@@ -140,8 +140,9 @@
           transform: translateX(-300%);
         }
         @media (max-width: 390px){
-          width: 8rem;
+          width: 9rem;
           transform: translateX(-70%);
+          transition: all 300ms;
         }
       }
       &:hover .check_icon {

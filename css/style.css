@@ -506,8 +506,9 @@ a {
 }
 @media (max-width: 390px) {
   .menu--grid .commande:hover .prix {
-    width: 8rem;
+    width: 9rem;
     transform: translateX(-70%);
+    transition: all 300ms;
   }
 }
 .menu--grid .commande:hover .check_icon {
