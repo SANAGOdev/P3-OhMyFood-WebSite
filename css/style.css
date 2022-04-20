@@ -685,6 +685,11 @@ a {
     padding-left: 1rem;
   }
 }
+@media (max-width: 1366px) {
+  .check {
+    left: 22rem;
+  }
+}
 @media (max-width: 1280px) {
   .check {
     left: 21rem;
