@@ -606,11 +606,6 @@ a {
     overflow: hidden;
   }
 }
-.menu--grid .commande .items p {
-  margin: 0;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
 @media (min-width: 994px) {
   .menu {
     display: flex;
