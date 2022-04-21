@@ -556,6 +556,10 @@ a {
 }
 .menu--grid .commande .description {
   font-size: 13px;
+  margin: 0;
+}
+.menu--grid .commande .description p {
+  margin: 0;
 }
 @media (max-width: 390px) {
   .menu--grid .commande .description {

@@ -178,6 +178,10 @@
       }
       & .description {
         font-size: 13px;
+        margin: 0;
+        & p{
+          margin: 0;
+        }
         @media (max-width: 390px){
           text-overflow: ellipsis;
           overflow: hidden;
