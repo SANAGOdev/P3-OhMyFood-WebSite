@@ -54,7 +54,7 @@
     @for $i from 1 through 4 {
       &__image#{$i} {
         @include cards-size;
-        background-image: url(../images/restaurants/image#{$i}.jpg);
+        background-image: url(../../images/restaurants/image#{$i}.jpg);
       }
       @media (min-width: 994px) {
         display: flex;

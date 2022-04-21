@@ -193,7 +193,7 @@ a {
   border-radius: 20px 20px 0px 0px;
   background-size: cover;
   background-position: center;
-  background-image: url(../images/restaurants/image1.jpg);
+  background-image: url(../../images/restaurants/image1.jpg);
 }
 @media (min-width: 994px) {
   .restaurants .card {
@@ -212,7 +212,7 @@ a {
   border-radius: 20px 20px 0px 0px;
   background-size: cover;
   background-position: center;
-  background-image: url(../images/restaurants/image2.jpg);
+  background-image: url(../../images/restaurants/image2.jpg);
 }
 @media (min-width: 994px) {
   .restaurants .card {
@@ -231,7 +231,7 @@ a {
   border-radius: 20px 20px 0px 0px;
   background-size: cover;
   background-position: center;
-  background-image: url(../images/restaurants/image3.jpg);
+  background-image: url(../../images/restaurants/image3.jpg);
 }
 @media (min-width: 994px) {
   .restaurants .card {
@@ -250,7 +250,7 @@ a {
   border-radius: 20px 20px 0px 0px;
   background-size: cover;
   background-position: center;
-  background-image: url(../images/restaurants/image4.jpg);
+  background-image: url(../../images/restaurants/image4.jpg);
 }
 @media (min-width: 994px) {
   .restaurants .card {
@@ -337,7 +337,7 @@ a {
   width: 100%;
   background-size: cover;
   margin-top: -3px;
-  background-image: url(../images/restaurants/image3.jpg);
+  background-image: url(../../images/restaurants/image3.jpg);
 }
 @media (min-width: 994px) {
   .cover--image1 {
@@ -351,7 +351,7 @@ a {
   width: 100%;
   background-size: cover;
   margin-top: -3px;
-  background-image: url(../images/restaurants/image2.jpg);
+  background-image: url(../../images/restaurants/image2.jpg);
 }
 @media (min-width: 994px) {
   .cover--image2 {
@@ -365,7 +365,7 @@ a {
   width: 100%;
   background-size: cover;
   margin-top: -3px;
-  background-image: url(../images/restaurants/image1.jpg);
+  background-image: url(../../images/restaurants/image1.jpg);
 }
 @media (max-width: 994px) {
   .cover--image3 {
@@ -384,7 +384,7 @@ a {
   width: 100%;
   background-size: cover;
   margin-top: -3px;
-  background-image: url(../images/restaurants/image1.jpg);
+  background-image: url(../../images/restaurants/image1.jpg);
 }
 @media (max-width: 994px) {
   .cover--image4 {
@@ -487,6 +487,11 @@ a {
   flex-direction: row;
   cursor: pointer;
 }
+@media (max-width: 992px) {
+  .menu--grid .commande {
+    justify-content: normal;
+  }
+}
 @media (max-width: 390px) {
   .menu--grid .commande {
     justify-content: normal;
@@ -551,8 +556,12 @@ a {
 }
 .menu--grid .commande .description {
   font-size: 13px;
-  text-overflow: ellipsis;
-  overflow: hidden;
+}
+@media (max-width: 390px) {
+  .menu--grid .commande .description {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 }
 @media (max-width: 375px) {
   .menu--grid .commande .description {
@@ -564,10 +573,7 @@ a {
   display: flex;
   width: 14rem;
   flex-direction: column;
-  justify-content: center;
   justify-content: space-around;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 @media (max-width: 1280px) {
   .menu--grid .commande .items {
@@ -579,25 +585,26 @@ a {
     right: 6rem;
   }
 }
-@media (max-width: 745px) {
-  .menu--grid .commande .items {
-    right: 5rem;
-  }
-}
 @media (max-width: 390px) {
   .menu--grid .commande .items {
     right: 2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 @media (max-width: 375px) {
   .menu--grid .commande .items {
+    text-overflow: ellipsis;
+    overflow: hidden;
     padding-left: 0;
     right: 1rem;
   }
 }
-.menu--grid .commande .items h2 {
-  text-overflow: ellipsis;
-  overflow: hidden;
+@media (max-width: 390px) {
+  .menu--grid .commande .items h2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 }
 .menu--grid .commande .items p {
   margin: 0;
@@ -655,13 +662,8 @@ a {
 }
 @media (max-width: 994px) {
   .prix {
-    left: 8rem;
+    left: 34rem;
     top: 50%;
-  }
-}
-@media (max-width: 745px) {
-  .prix {
-    left: 11rem;
   }
 }
 @media (max-width: 390px) {
@@ -728,9 +730,7 @@ a {
 @media (max-width: 745px) {
   .check {
     padding: 1rem;
-    left: 7rem;
     height: 2.7rem;
-    top: -24%;
   }
 }
 @media (max-width: 390px) {
@@ -762,11 +762,6 @@ a {
 @media (max-width: 994px) {
   .check_icon {
     margin-top: 0.8rem;
-  }
-}
-@media (max-width: 745px) {
-  .check_icon {
-    margin-top: 0.6rem;
   }
 }
 @media (max-width: 390px) {
