@@ -72,9 +72,9 @@ a {
   }
 }
 .info button:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
+  opacity: 0.8;
   cursor: pointer;
+  box-shadow: 0px 6px 13px 0px #4d4c4c;
 }
 
 .fonctionnement {
@@ -637,9 +637,9 @@ a {
   transition: all 0.2s;
 }
 .button button:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
+  opacity: 0.8;
   cursor: pointer;
+  box-shadow: 0px 6px 13px 0px #4d4c4c;
 }
 @media (min-width: 994px) {
   .button button {

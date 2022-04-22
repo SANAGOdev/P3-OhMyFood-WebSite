@@ -14,7 +14,6 @@
   & p {
     margin: 0;
     margin-left: 3%;
-    
   }
   & a {
     text-decoration: none;
@@ -32,10 +31,10 @@
   @media (min-width: 995px) {
     display: flex;
     align-items: center;
-    .links{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
+    .links {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
     }
   }
 }

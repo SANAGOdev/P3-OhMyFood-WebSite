@@ -2,30 +2,30 @@
 @import "../Utils/mixins";
 
 .info {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    background-color: $color-grey;
-    padding-bottom: 4rem;
-    & h1 {
-      margin-top: 2rem;
-      margin-bottom: 0;
-      font-size: 1.6rem;
-    }
-    & p {
-      font-size: 1rem;
-      margin-left: 5%;
-      margin-right: 5%;
-      margin-bottom: 10%;
-    }
-    & button {
-      @include button;
-      @include box-shadow;
-      @media (min-width: 995px) {
-        width: 25%;
-      }
-    }
-    & button:hover {
-      @include hover;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: $color-grey;
+  padding-bottom: 4rem;
+  & h1 {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 1.6rem;
+  }
+  & p {
+    font-size: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+  }
+  & button {
+    @include button;
+    @include box-shadow;
+    @media (min-width: 995px) {
+      width: 25%;
     }
   }
+  & button:hover {
+    @include hover-button;
+  }
+}

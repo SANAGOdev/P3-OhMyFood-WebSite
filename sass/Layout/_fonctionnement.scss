@@ -1,49 +1,49 @@
-.fonctionnement{
-    counter-reset: compteur;
-    & ol{
-        display: flex;
-        gap: 2rem;
-        padding-left: 1rem;
-        @media (max-width: 994px) {
-            flex-direction: column;
-        }
+.fonctionnement {
+  counter-reset: compteur;
+  & ol {
+    display: flex;
+    gap: 2rem;
+    padding-left: 1rem;
+    @media (max-width: 994px) {
+      flex-direction: column;
     }
-    & li{
-        position: relative;
-        background-color: $color-grey;
-        padding: 1.5rem 2rem;
-        border-radius: 1rem;
-        font-weight: bold;
-        list-style-type: none;
-        @include box-shadow;
-        &::before{
-            position: absolute;
-            counter-increment: compteur;
-            content: counter(compteur);
-            color: $color-white;
-            background-color: $color-primary;
-            display: grid;
-            place-items: center;
-            width: 2 * $base-size;
-            height: 2 * $base-size;
-            border-radius: 50%;
-            bottom: $base-size;
-            left: -$base-size;
-        }
-        &:hover{
-            background-color: $color-cell;
-            i{
-                color: $color-primary;
-                opacity: 1;
-            }
-        }
-        @media (min-width: 994px){
-            width: 100%;
-            margin-right: 5%;
-        }
-        & i{
-            margin-right: 1rem;
-            opacity: 0.5;
-        }
+  }
+  & li {
+    position: relative;
+    background-color: $color-grey;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    list-style-type: none;
+    @include box-shadow;
+    &::before {
+      position: absolute;
+      counter-increment: compteur;
+      content: counter(compteur);
+      color: $color-white;
+      background-color: $color-primary;
+      display: grid;
+      place-items: center;
+      width: 2 * $base-size;
+      height: 2 * $base-size;
+      border-radius: 50%;
+      bottom: $base-size;
+      left: -$base-size;
     }
+    &:hover {
+      background-color: $color-cell;
+      i {
+        color: $color-primary;
+        opacity: 1;
+      }
+    }
+    @media (min-width: 994px) {
+      width: 100%;
+      margin-right: 5%;
+    }
+    & i {
+      margin-right: 1rem;
+      opacity: 0.5;
+    }
+  }
 }

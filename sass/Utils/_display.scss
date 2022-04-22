@@ -1,19 +1,25 @@
-.display{
-    &_one{
-        opacity: 1;
-        animation: display 0.9s forwards ease-in-out ;
-    }
-    &_two{
-        opacity: 1;
-        animation: display 1.2s forwards ease-in-out ;
-    }
-    &_three{
-        opacity: 1;
-        animation: display 1.5s forwards ease-in-out;
-    }
+.display {
+  &_one {
+    opacity: 1;
+    animation: display 0.9s forwards ease-in-out;
+  }
+  &_two {
+    opacity: 1;
+    animation: display 1.2s forwards ease-in-out;
+  }
+  &_three {
+    opacity: 1;
+    animation: display 1.5s forwards ease-in-out;
+  }
 }
 
 @keyframes display {
-    0%{opacity: 0%; transform: translateY(30px);}
-    100%{opacity: 100%; transform: translateY(0px);}
+  0% {
+    opacity: 0%;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
 }

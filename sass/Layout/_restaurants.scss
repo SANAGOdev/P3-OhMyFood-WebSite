@@ -60,9 +60,9 @@
         display: flex;
         width: 400px;
       }
-    &:hover{
-      @include hover
-    }
+      &:hover {
+        @include hover;
+      }
     }
     &__description {
       position: relative;

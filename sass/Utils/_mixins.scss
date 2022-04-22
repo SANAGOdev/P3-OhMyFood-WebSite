@@ -17,6 +17,11 @@
   opacity: 0.9;
   cursor: pointer;
 }
+@mixin hover-button {
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: 0px 6px 13px 0px #4d4c4c;
+}
 @mixin cards-size {
   height: 75%;
   width: 100%;
