@@ -15,7 +15,11 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-  h2 {
+  & input {
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    background-color: #e3e3e3;
     font-size: 1rem;
     margin: 0;
   }
