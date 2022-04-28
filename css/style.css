@@ -574,7 +574,6 @@ a {
   .menu--grid .commande {
     padding: 1rem;
     padding-right: 5rem;
-    align-items: left;
     width: 20%;
   }
 }
