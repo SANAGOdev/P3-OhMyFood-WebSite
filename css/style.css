@@ -534,6 +534,11 @@ a {
     transform: translateX(-300%);
   }
 }
+@media (max-width: 768px) {
+  .menu--grid .commande:hover .prix {
+    transform: translateX(-100%);
+  }
+}
 @media (max-width: 425px) {
   .menu--grid .commande:hover .prix {
     width: 9rem;
@@ -652,6 +657,7 @@ a {
 }
 @media (max-width: 994px) {
   .menu--grid .commande .items {
+    width: 14rem;
     right: 6rem;
   }
 }
@@ -662,12 +668,14 @@ a {
 }
 @media (max-width: 425px) {
   .menu--grid .commande .items {
+    width: 15rem;
     text-overflow: ellipsis;
     overflow: hidden;
   }
 }
 @media (max-width: 390px) {
   .menu--grid .commande .items {
+    width: 14rem;
     right: 2rem;
     text-overflow: ellipsis;
     overflow: hidden;
