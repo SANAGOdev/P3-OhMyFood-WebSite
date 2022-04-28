@@ -434,6 +434,11 @@ a {
   margin-left: 5%;
   margin-bottom: 0;
 }
+@media (max-width: 280px) {
+  .menu--header > h2 {
+    font-size: 22px;
+  }
+}
 .menu--header i {
   position: absolute;
   font-size: 2rem;
@@ -567,6 +572,13 @@ a {
     transition: all 300ms;
   }
 }
+@media (max-width: 280px) {
+  .menu--grid .commande:hover .prix {
+    transform: translateX(-30%);
+    transition: all 300ms;
+    width: 10rem;
+  }
+}
 .menu--grid .commande:hover .check_icon {
   transform: rotate(360deg);
 }
@@ -626,6 +638,12 @@ a {
 @media (max-width: 375px) {
   .menu--grid .commande .description {
     font-size: 13px;
+  }
+}
+@media (max-width: 280px) {
+  .menu--grid .commande .description {
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 .menu--grid .commande .items {
@@ -688,6 +706,11 @@ a {
     right: 1rem;
   }
 }
+@media (max-width: 280px) {
+  .menu--grid .commande .items {
+    width: 11rem;
+  }
+}
 @media (max-width: 1440px) {
   .menu--grid .commande .items h2 {
     text-overflow: ellipsis;
@@ -707,6 +730,12 @@ a {
   }
 }
 @media (max-width: 390px) {
+  .menu--grid .commande .items h2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+@media (max-width: 280px) {
   .menu--grid .commande .items h2 {
     text-overflow: ellipsis;
     overflow: hidden;
@@ -905,6 +934,11 @@ a {
   .check {
     left: 15.8rem;
     height: 2.2rem;
+  }
+}
+@media (max-width: 280px) {
+  .check {
+    left: 13.5rem;
   }
 }
 .check_icon {
