@@ -648,11 +648,11 @@ a {
     width: 7rem;
   }
 }
-@media (max-width: 994px) {
+@media (max-width: 992px) {
   .menu--grid .commande:hover .prix {
-    -webkit-transform: translateX(-300%);
-        -ms-transform: translateX(-300%);
-            transform: translateX(-300%);
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 @media (max-width: 768px) {

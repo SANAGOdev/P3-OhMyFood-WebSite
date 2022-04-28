@@ -529,9 +529,9 @@ a {
     width: 7rem;
   }
 }
-@media (max-width: 994px) {
+@media (max-width: 992px) {
   .menu--grid .commande:hover .prix {
-    transform: translateX(-300%);
+    transform: translateX(-100%);
   }
 }
 @media (max-width: 768px) {
